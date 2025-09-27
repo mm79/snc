@@ -45,7 +45,7 @@ fn create_cipher_from_hex_32(hex: &str) -> Result<Aes256Gcm, String> {
     let bytes = decode(hex).map_err(|e| format!("Invalid hex key: {}", e))?;
     if bytes.len() != 32 {
         return Err(format!(
-            "Key must be 32 bytes (usage: openssl; got {} bytes",
+            "Key must be 32 bytes; got {} bytes",
             bytes.len()
         ));
     }
