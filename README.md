@@ -1,6 +1,7 @@
 # snc
 
 Simple test in Rust to write a netcat-style program that uses AES-256-GCM with PSK.
+The code was written to test the use of Tokio.
 
 ## Usage
 
