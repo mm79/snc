@@ -1,0 +1,12 @@
+[package]
+name = "snc"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+clap = { version = "4", features = ["derive"] }
+aes-gcm = "0.10"
+rand = "0.8"
+hex = "0.4"
+atty = "0.2"
